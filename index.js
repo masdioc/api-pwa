@@ -3,9 +3,19 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const authRoutes = require("./routes/auth");
-require("dotenv").config();
+
+
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors()); // 👈 Izinkan semua origin
+app.use(express.json());
+
+
+require("dotenv").config();
+ 
 app.use(bodyParser.json());
 
 app.use("/api", authRoutes);
