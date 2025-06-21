@@ -1,0 +1,724 @@
+[
+  {
+    "id": 1,
+    "question": "What is the plural form of 'mouse'?",
+    "options": ["mouses", "mices", "mice", "mouse"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'mice' karena bentuk jamak dari 'mouse' yang benar dalam bahasa Inggris adalah 'mice', bukan 'mouses'."
+  },
+  {
+    "id": 2,
+    "question": "She ___ to school every day.",
+    "options": ["go", "goes", "gone", "going"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'goes' karena subjek 'she' membutuhkan bentuk kata kerja dengan akhiran -s di present tense."
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct sentence.",
+    "options": [
+      "He don't like fish.",
+      "He doesn't like fish.",
+      "He doesn't likes fish.",
+      "He not like fish."
+    ],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'He doesn't like fish.' karena bentuk negatif simple present untuk 'he' adalah 'doesn't + verb 1'."
+  },
+  {
+    "id": 4,
+    "question": "What is the opposite of 'cold'?",
+    "options": ["hot", "cool", "freezing", "ice"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'hot' karena merupakan lawan kata (antonim) dari 'cold'."
+  },
+  {
+    "id": 5,
+    "question": "The sun ___ in the east.",
+    "options": ["rise", "rises", "rose", "rising"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'rises' karena subjek 'The sun' membutuhkan verb dengan akhiran -s dalam present tense."
+  },
+  
+  {
+    "id": 6,
+    "question": "Which one is a fruit?",
+    "options": ["carrot", "potato", "banana", "onion"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'banana' karena itu adalah buah, sedangkan yang lainnya adalah sayuran."
+  },
+  {
+    "id": 7,
+    "question": "She is ___ than her sister.",
+    "options": ["tall", "taller", "tallest", "as tall"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'taller' karena membandingkan dua orang menggunakan bentuk komparatif."
+  },
+  {
+    "id": 8,
+    "question": "I have ___ umbrella in my bag.",
+    "options": ["a", "an", "the", "some"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'an' karena 'umbrella' dimulai dengan huruf vokal sehingga memerlukan 'an'."
+  },
+  {
+    "id": 9,
+    "question": "They ___ watching a movie now.",
+    "options": ["are", "is", "was", "be"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'are' karena subjek jamak 'they' memerlukan to be bentuk 'are' dalam present continuous tense."
+  },
+  {
+    "id": 10,
+    "question": "What time is it? (07:30)",
+    "options": ["Seven o'clock", "Half past seven", "Quarter to eight", "Thirty seven"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'Half past seven' yang merupakan cara menyebut pukul 07.30 dalam bahasa Inggris."
+  },
+  {
+    "id": 11,
+    "question": "What is the synonym of 'intelligent'?",
+    "options": ["dull", "smart", "lazy", "slow"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'smart' karena sinonim dari 'intelligent' adalah 'smart' (cerdas/pintar)."
+  },
+  {
+    "id": 12,
+    "question": "My brother ___ a new bike last week.",
+    "options": ["buy", "bought", "buys", "buying"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'bought' karena menunjukkan kejadian lampau (last week), jadi gunakan past tense dari 'buy'."
+  },
+  {
+    "id": 13,
+    "question": "How do you say 'selamat pagi' in English?",
+    "options": ["Good night", "Good morning", "Good afternoon", "Good evening"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'Good morning' karena itu adalah arti dari 'selamat pagi' dalam bahasa Inggris."
+  },
+  {
+    "id": 14,
+    "question": "Which of these is an adjective?",
+    "options": ["quickly", "run", "beautiful", "sing"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'beautiful' karena itu adalah kata sifat (adjective), sedangkan lainnya bukan."
+  },
+  {
+    "id": 15,
+    "question": "What is the correct spelling?",
+    "options": ["definately", "definitely", "definitly", "definete"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'definitely' karena itu adalah ejaan yang benar dari kata 'pasti'."
+  }
+,
+
+  {
+    "id": 16,
+    "question": "They ___ in the library right now.",
+    "options": ["am", "is", "are", "was"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'are' karena subjek 'they' (jamak) membutuhkan to be 'are' dalam present continuous."
+  },
+  {
+    "id": 17,
+    "question": "Which word has the same meaning as 'quick'?",
+    "options": ["slow", "fast", "late", "long"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'fast' karena 'fast' adalah sinonim dari 'quick' (cepat)."
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is a verb?",
+    "options": ["teacher", "study", "book", "smart"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'study' karena itu adalah kata kerja (verb)."
+  },
+  {
+    "id": 19,
+    "question": "What is the capital of the United Kingdom?",
+    "options": ["New York", "London", "Paris", "Madrid"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'London' karena itu adalah ibu kota dari United Kingdom (Inggris Raya)."
+  },
+  {
+    "id": 20,
+    "question": "Choose the correct sentence.",
+    "options": [
+      "There is many apples.",
+      "There are many apple.",
+      "There are many apples.",
+      "There is many apple."
+    ],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'There are many apples.' karena 'apples' jamak dan subjek plural memerlukan 'are'."
+  },
+  {
+    "id": 21,
+    "question": "Which one is a color?",
+    "options": ["table", "blue", "run", "quick"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'blue' karena itu adalah nama warna (color)."
+  },
+  {
+    "id": 22,
+    "question": "The opposite of 'day' is ___",
+    "options": ["light", "dark", "night", "sun"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'night' karena lawan kata dari 'day' (siang/hari) adalah 'night' (malam)."
+  },
+  {
+    "id": 23,
+    "question": "How many legs does a spider have?",
+    "options": ["6", "8", "10", "12"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah '8' karena laba-laba (spider) memiliki delapan kaki."
+  },
+  {
+    "id": 24,
+    "question": "The bird is ___ the tree.",
+    "options": ["on", "under", "in", "behind"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'in' karena burung bisa berada 'di dalam' (in) pohon, tergantung konteks."
+  },
+  {
+    "id": 25,
+    "question": "He is ___ honest boy.",
+    "options": ["a", "an", "the", "some"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'an' karena kata 'honest' dimulai dengan bunyi vokal, meskipun huruf pertama 'h'."
+  },
+  {
+    "id": 26,
+    "question": "Which one is not a vegetable?",
+    "options": ["spinach", "cucumber", "orange", "carrot"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'orange' karena itu adalah buah, bukan sayuran seperti pilihan lainnya."
+  },
+  {
+    "id": 27,
+    "question": "The students ___ very noisy yesterday.",
+    "options": ["is", "are", "was", "were"],
+    "answer": 3,
+    "explanation": "Jawaban yang benar adalah 'were' karena subjek 'students' adalah jamak dan waktunya lampau (yesterday)."
+  },
+  {
+    "id": 28,
+    "question": "Where ___ you go last weekend?",
+    "options": ["do", "did", "does", "doing"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'did' karena menanyakan kejadian masa lalu (last weekend) menggunakan 'did'."
+  },
+  {
+    "id": 29,
+    "question": "She has ___ beautiful eyes.",
+    "options": ["a", "the", "some", "an"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'some' karena 'eyes' bersifat jamak dan tidak dapat dihitung satu per satu secara umum."
+  },
+  {
+    "id": 30,
+    "question": "Which animal is the largest?",
+    "options": ["Elephant", "Dog", "Cat", "Cow"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'Elephant' karena gajah adalah hewan terbesar di antara pilihan tersebut."
+  }
+,
+
+  {
+    "id": 31,
+    "question": "What does 'library' mean?",
+    "options": ["place to eat", "place to swim", "place to read", "place to shop"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'place to read' karena 'library' adalah tempat untuk membaca atau meminjam buku."
+  },
+  {
+    "id": 32,
+    "question": "He ___ a football player.",
+    "options": ["is", "are", "am", "be"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'is' karena subjek 'he' membutuhkan to be 'is'."
+  },
+  {
+    "id": 33,
+    "question": "Which of these is a means of transportation?",
+    "options": ["chair", "bicycle", "book", "computer"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'bicycle' karena itu adalah alat transportasi, bukan benda mati lainnya."
+  },
+  {
+    "id": 34,
+    "question": "Fill in the blank: I ___ to the music.",
+    "options": ["listen", "listened", "am listening", "listens"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'am listening' karena bentuk kalimat present continuous (sedang mendengarkan)."
+  },
+  {
+    "id": 35,
+    "question": "The correct plural of 'tooth' is ___",
+    "options": ["toothes", "teeth", "tooths", "teeths"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'teeth' karena bentuk jamak tidak beraturan dari 'tooth' adalah 'teeth'."
+  },
+  {
+    "id": 36,
+    "question": "Choose the correct word: '___ is your name?'",
+    "options": ["How", "Where", "What", "Why"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'What' karena pertanyaan tentang nama diawali dengan 'What is your name?'."
+  },
+  {
+    "id": 37,
+    "question": "I ___ a great movie last night.",
+    "options": ["watch", "watches", "watched", "watching"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'watched' karena menggunakan past tense untuk kejadian yang sudah lewat (last night)."
+  },
+  {
+    "id": 38,
+    "question": "___ is the opposite of 'tall'.",
+    "options": ["High", "Short", "Small", "Thin"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'Short' karena lawan kata (antonim) dari 'tall' adalah 'short'."
+  },
+  {
+    "id": 39,
+    "question": "My parents ___ very kind.",
+    "options": ["is", "was", "are", "be"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'are' karena 'parents' adalah subjek jamak yang memerlukan to be 'are'."
+  },
+  {
+    "id": 40,
+    "question": "I usually ___ at 6 a.m.",
+    "options": ["get up", "got up", "gets up", "getting up"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'get up' karena bentuk present tense biasa untuk rutinitas harian."
+  },
+  {
+    "id": 41,
+    "question": "What does 'hungry' mean?",
+    "options": ["want to sleep", "want to eat", "want to go", "want to play"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'want to eat' karena 'hungry' artinya lapar, yaitu ingin makan."
+  },
+  {
+    "id": 42,
+    "question": "She ___ a shower every morning.",
+    "options": ["take", "takes", "took", "taking"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'takes' karena subjek 'she' memerlukan verb bentuk -s di simple present."
+  },
+  {
+    "id": 43,
+    "question": "We ___ playing football now.",
+    "options": ["was", "are", "is", "were"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'are' karena subjek 'we' dalam present continuous menggunakan 'are'."
+  },
+  {
+    "id": 44,
+    "question": "Which one is not a part of the body?",
+    "options": ["leg", "arm", "nose", "book"],
+    "answer": 3,
+    "explanation": "Jawaban yang benar adalah 'book' karena itu adalah benda, bukan bagian tubuh."
+  },
+  {
+    "id": 45,
+    "question": "My sister ___ to music every day.",
+    "options": ["listens", "listen", "listening", "listened"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'listens' karena subjek 'my sister' membutuhkan verb + s di present tense."
+  },
+  
+  {
+    "id": 46,
+    "question": "Which word is a noun?",
+    "options": ["run", "cat", "happy", "blue"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'cat' karena itu adalah kata benda (noun), sedangkan yang lain adalah kata kerja atau sifat."
+  },
+  {
+    "id": 47,
+    "question": "He ___ at the moment.",
+    "options": ["sleep", "sleeps", "is sleeping", "sleeping"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'is sleeping' karena sedang berlangsung sekarang (present continuous)."
+  },
+  {
+    "id": 48,
+    "question": "I ___ go to the park yesterday.",
+    "options": ["don’t", "didn’t", "wasn’t", "haven’t"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'didn’t' karena menunjukkan penyangkalan di masa lalu."
+  },
+  {
+    "id": 49,
+    "question": "Which is a polite expression?",
+    "options": ["Give me", "I want", "Please", "Do it"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'Please' karena itu adalah ekspresi yang sopan dalam meminta sesuatu."
+  },
+  {
+    "id": 50,
+    "question": "A: How are you? B: ___",
+    "options": ["Nice to meet you", "I am fine, thank you", "Goodbye", "My name is Dina"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'I am fine, thank you' karena itu respon yang tepat untuk pertanyaan 'How are you?'."
+  },
+  {
+    "id": 51,
+    "question": "What is the past tense of 'see'?",
+    "options": ["saw", "see", "seen", "seeing"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'saw' karena itu adalah bentuk lampau (past tense) dari 'see'."
+  },
+  {
+    "id": 52,
+    "question": "Which one is used for cutting?",
+    "options": ["spoon", "fork", "knife", "plate"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'knife' karena pisau digunakan untuk memotong."
+  },
+  {
+    "id": 53,
+    "question": "Choose the correct question: ___ you like pizza?",
+    "options": ["Are", "Do", "Does", "Did"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'Do' karena digunakan untuk subjek 'you' dalam kalimat tanya present simple."
+  },
+  {
+    "id": 54,
+    "question": "___ is the largest planet in our solar system.",
+    "options": ["Mars", "Earth", "Jupiter", "Venus"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'Jupiter' karena itu adalah planet terbesar di tata surya."
+  },
+  {
+    "id": 55,
+    "question": "The opposite of 'clean' is ___",
+    "options": ["tidy", "dirty", "dusty", "neat"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'dirty' karena itu adalah lawan kata dari 'clean'."
+  },
+  {
+    "id": 56,
+    "question": "We ___ lunch at 12 o’clock.",
+    "options": ["have", "has", "had", "having"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'have' karena subjek 'we' menggunakan bentuk dasar tanpa -s di present tense."
+  },
+  {
+    "id": 57,
+    "question": "How many days are there in a week?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah '7' karena ada tujuh hari dalam satu minggu."
+  },
+  {
+    "id": 58,
+    "question": "He ___ a doctor.",
+    "options": ["am", "is", "are", "was"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'is' karena subjek 'he' menggunakan to be 'is' dalam present tense."
+  },
+  {
+    "id": 59,
+    "question": "Which is the correct spelling?",
+    "options": ["becuase", "because", "becouse", "beacause"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'because' karena itu adalah ejaan yang benar dalam bahasa Inggris."
+  },
+  {
+    "id": 60,
+    "question": "I go to school ___ Monday to Friday.",
+    "options": ["in", "on", "at", "from"],
+    "answer": 3,
+    "explanation": "Jawaban yang benar adalah 'from' karena menunjukkan rentang waktu dari hari Senin sampai Jumat."
+  },
+  
+  {
+    "id": 61,
+    "question": "The children ___ playing in the yard.",
+    "options": ["was", "is", "are", "be"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'are' karena subjek 'children' adalah jamak dan membutuhkan to be bentuk plural."
+  },
+  {
+    "id": 62,
+    "question": "The baby ___ crying now.",
+    "options": ["is", "are", "was", "were"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'is' karena 'baby' adalah subjek tunggal dan menunjukkan kegiatan sekarang (present continuous)."
+  },
+  {
+    "id": 63,
+    "question": "The past tense of 'eat' is ___",
+    "options": ["eated", "ate", "eaten", "eats"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'ate' karena itu bentuk past tense (lampau) dari 'eat'."
+  },
+  {
+    "id": 64,
+    "question": "Which of the following is a question word?",
+    "options": ["slow", "what", "run", "blue"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'what' karena itu adalah kata tanya dalam bahasa Inggris."
+  },
+  {
+    "id": 65,
+    "question": "You ___ not smoke here.",
+    "options": ["can", "must", "should", "must"],
+    "answer": 3,
+    "explanation": "Jawaban yang benar adalah 'must' karena bentuk larangan atau peraturan biasanya menggunakan 'must not'."
+  },
+  {
+    "id": 66,
+    "question": "This bag is ___ than that one.",
+    "options": ["cheap", "cheaper", "cheapest", "more cheap"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'cheaper' karena membandingkan dua benda menggunakan bentuk komparatif."
+  },
+  {
+    "id": 67,
+    "question": "The correct greeting in the evening is ___",
+    "options": ["Good night", "Good morning", "Good evening", "Hello"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'Good evening' karena itu salam yang digunakan pada malam hari sebelum tidur."
+  },
+  {
+    "id": 68,
+    "question": "The word 'library' refers to a place to ___",
+    "options": ["sleep", "read books", "eat", "shop"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'read books' karena 'library' adalah tempat membaca atau meminjam buku."
+  },
+  {
+    "id": 69,
+    "question": "Rina ___ to school by bike.",
+    "options": ["go", "goes", "went", "going"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'goes' karena subjek tunggal 'Rina' menggunakan verb dengan akhiran -s."
+  },
+  {
+    "id": 70,
+    "question": "Which one is a family member?",
+    "options": ["teacher", "uncle", "driver", "doctor"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'uncle' karena itu termasuk anggota keluarga, sedangkan yang lain adalah profesi."
+  },
+  {
+    "id": 71,
+    "question": "How many months are there in a year?",
+    "options": ["10", "11", "12", "13"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah '12' karena ada 12 bulan dalam setahun."
+  },
+  {
+    "id": 72,
+    "question": "My father ___ coffee every morning.",
+    "options": ["drinks", "drink", "drinking", "drank"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'drinks' karena subjek 'my father' membutuhkan verb dengan -s pada present tense."
+  },
+  {
+    "id": 73,
+    "question": "I ___ my homework last night.",
+    "options": ["do", "did", "done", "doing"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'did' karena menunjukkan kegiatan di masa lalu (last night)."
+  },
+  {
+    "id": 74,
+    "question": "Choose the correct spelling.",
+    "options": ["receve", "recieve", "receive", "receiv"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'receive' karena itu adalah ejaan yang benar dalam bahasa Inggris."
+  },
+  {
+    "id": 75,
+    "question": "What is the synonym of 'small'?",
+    "options": ["tiny", "big", "short", "tall"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'tiny' karena itu adalah sinonim dari 'small' yang berarti kecil."
+  },
+
+  {
+    "id": 76,
+    "question": "Where ___ you live?",
+    "options": ["does", "do", "are", "is"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'do' karena pertanyaan dengan subjek 'you' dalam present simple menggunakan 'do'."
+  },
+  {
+    "id": 77,
+    "question": "Which one is a fruit?",
+    "options": ["apple", "carrot", "lettuce", "cabbage"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'apple' karena itu adalah buah, sedangkan yang lain adalah sayuran."
+  },
+  {
+    "id": 78,
+    "question": "My sister and I ___ cooking now.",
+    "options": ["is", "are", "was", "were"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'are' karena subjek jamak membutuhkan to be bentuk plural dalam present continuous."
+  },
+  {
+    "id": 79,
+    "question": "He ___ go to the dentist yesterday.",
+    "options": ["don’t", "didn’t", "doesn’t", "isn’t"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'didn’t' karena menunjukkan penyangkalan di masa lalu (yesterday)."
+  },
+  {
+    "id": 80,
+    "question": "A: What's your hobby? B: ___",
+    "options": ["I am fine", "I am twelve", "I like painting", "Yes, I do"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'I like painting' karena menjawab pertanyaan tentang hobi."
+  },
+  {
+    "id": 81,
+    "question": "How do you say 'jam tangan' in English?",
+    "options": ["necklace", "bracelet", "watch", "clock"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'watch' karena 'jam tangan' dalam bahasa Inggris disebut 'watch'."
+  },
+  {
+    "id": 82,
+    "question": "What is the opposite of 'old'?",
+    "options": ["young", "new", "long", "short"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'young' karena itu adalah lawan kata dari 'old' jika membicarakan usia."
+  },
+  {
+    "id": 83,
+    "question": "I ___ already finished my work.",
+    "options": ["has", "have", "had", "having"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'have' karena subjek 'I' menggunakan 'have' dalam present perfect."
+  },
+  {
+    "id": 84,
+    "question": "She ___ TV when I called her.",
+    "options": ["watched", "watches", "was watching", "is watching"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'was watching' karena menunjukkan aktivitas yang sedang berlangsung ketika kejadian lain terjadi."
+  },
+  {
+    "id": 85,
+    "question": "Which one is a preposition?",
+    "options": ["blue", "under", "quickly", "run"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'under' karena itu adalah kata depan (preposition)."
+  },
+  {
+    "id": 86,
+    "question": "___ name is Dina. I’m your new classmate.",
+    "options": ["His", "Her", "My", "Our"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'My' karena kalimat menyatakan milik dari pembicara."
+  },
+  {
+    "id": 87,
+    "question": "They ___ a new house last month.",
+    "options": ["buy", "buys", "bought", "buying"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'bought' karena menunjukkan kejadian lampau (last month)."
+  },
+  {
+    "id": 88,
+    "question": "He ___ not at home yesterday.",
+    "options": ["is", "are", "was", "were"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'was' karena subjek 'he' dan waktunya lampau."
+  },
+  {
+    "id": 89,
+    "question": "I ___ like spicy food.",
+    "options": ["don’t", "doesn’t", "am not", "is not"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'don’t' karena subjek 'I' dalam present simple negative menggunakan 'don’t'."
+  },
+  {
+    "id": 90,
+    "question": "The phone is ___ the table.",
+    "options": ["in", "on", "under", "over"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'on' karena benda berada di atas meja."
+  },
+  {
+    "id": 91,
+    "question": "What is the meaning of 'teacher'?",
+    "options": ["orang yang mengajar", "orang yang memasak", "orang yang menyanyi", "orang yang menari"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'orang yang mengajar' karena arti 'teacher' adalah guru."
+  },
+  {
+    "id": 92,
+    "question": "I want to buy ___ apple.",
+    "options": ["a", "an", "the", "some"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'an' karena 'apple' diawali huruf vokal."
+  },
+  {
+    "id": 93,
+    "question": "The sun ___ in the west.",
+    "options": ["set", "sets", "rises", "rise"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'sets' karena menunjukkan kebiasaan alam dan subjek 'the sun' membutuhkan bentuk -s."
+  },
+  {
+    "id": 94,
+    "question": "Which one is used to write?",
+    "options": ["pencil", "ruler", "eraser", "sharpener"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'pencil' karena itu alat untuk menulis."
+  },
+  {
+    "id": 95,
+    "question": "She usually ___ breakfast at 7 a.m.",
+    "options": ["have", "has", "had", "having"],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 'has' karena subjek 'she' menggunakan bentuk -s."
+  },
+  {
+    "id": 96,
+    "question": "The dog is ___ the box.",
+    "options": ["in", "on", "under", "behind"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'under' karena menunjukkan posisi di bawah kotak."
+  },
+  {
+    "id": 97,
+    "question": "How do you spell 'school'?",
+    "options": ["s-c-h-o-o-l", "s-c-o-o-l", "s-k-o-l", "s-h-c-o-l"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 's-c-h-o-o-l' karena itu ejaan yang benar dari 'school'."
+  },
+  {
+    "id": 98,
+    "question": "The past tense of 'write' is ___",
+    "options": ["write", "written", "wrote", "writed"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'wrote' karena itu adalah bentuk lampau dari 'write'."
+  },
+  {
+    "id": 99,
+    "question": "___ you speak English?",
+    "options": ["Are", "Can", "Do", "Have"],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah 'Do' karena digunakan untuk menanyakan kemampuan atau kebiasaan dalam present simple."
+  },
+  {
+    "id": 100,
+    "question": "I ___ my teeth every morning.",
+    "options": ["brush", "brushed", "brushing", "brushes"],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah 'brush' karena menunjukkan kebiasaan harian dengan subjek 'I'."
+  }
+]
+
+
+
+
