@@ -35,5 +35,4 @@ exports.importSoalExcel = async (req, res) => {
     return res.status(400).json({ message: 'Format soal tidak valid.' });
   }
 };
-
-module.exports = router;
+ 
