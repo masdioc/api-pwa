@@ -63,3 +63,29 @@ exports.getAllUsers = async (req, res) => {
 exports.profile = async (req, res) => {
   res.json({ message: "Data profil", user: req.user });
 };
+
+exports.updatePassword = async (req, res) => {
+  const { id, current, newpass } = req.body;
+
+  if (!id || !current || !newpass) {
+    return res.status(400).json({ message: "Data tidak lengkap" });
+  }
+
+  try {
+    const [rows] = await db.query("SELECT password FROM users WHERE id = ?", [id]);
+    const user = rows[0];
+
+    if (!user) return res.status(404).json({ message: "User tidak ditemukan" });
+
+    const match = await bcrypt.compare(current, user.password);
+    if (!match) return res.status(401).json({ message: "Password lama salah" });
+
+    const hashed = await bcrypt.hash(newpass, 10);
+    await db.query("UPDATE users SET password = ? WHERE id = ?", [hashed, id]);
+
+    res.json({ message: "Password berhasil diperbarui" });
+  } catch (err) {
+    console.error("Gagal update password:", err);
+    res.status(500).json({ message: "Terjadi kesalahan server" });
+  }
+}
