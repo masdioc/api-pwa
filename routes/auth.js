@@ -9,7 +9,7 @@ const authenticate = require("../middleware/authMiddleware");
 const { importQuestions } = require('../controllers/importController');
 router.post("/register", authController.register);
 router.post("/login", authController.login);
-router.post("/updatePassword", authController.updatePassword);
+router.post("/update-password", authController.updatePassword);
 
 router.get("/profile", authenticate, authController.profile);
 router.get("/users", authController.getAllUsers); // 🔹 ini route baru
