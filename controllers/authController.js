@@ -39,7 +39,13 @@ exports.login = async (req, res) => {
 
     const token = jwt.sign({ id: user.id, username: user.username }, SECRET_KEY, { expiresIn: "1h" });
 
-    res.json({ message: "Login berhasil", token });
+    res.json({ message: "Login berhasil", token,user: {
+    id: user.id,
+    username: user.username,
+    name: user.name,
+    email: user.email,
+    level: user.level,
+  }, });
   } catch (err) {
     console.error("Gagal login:", err);
     res.status(500).json({ message: "Gagal login" });
