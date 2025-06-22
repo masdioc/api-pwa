@@ -63,7 +63,17 @@ exports.getAllUsers = async (req, res) => {
 exports.profile = async (req, res) => {
   res.json({ message: "Data profil", user: req.user });
 };
-
+exports.hafalan = async (req, res) => {
+  const { user_id, surah_nomor, surah_nama } = req.body;
+  db.query(
+    'INSERT INTO hafalan_surah (user_id, surah_nomor, surah_nama) VALUES (?, ?, ?)',
+    [user_id, surah_nomor, surah_nama],
+    (err) => {
+      if (err) return res.status(500).json({ error: 'Gagal menyimpan' });
+      res.json({ message: 'Berhasil disimpan' });
+    }
+  );
+};
 exports.updatePassword = async (req, res) => {
   const { id, current, newpass } = req.body;
 

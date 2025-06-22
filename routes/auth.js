@@ -10,6 +10,7 @@ const { importQuestions } = require('../controllers/importController');
 router.post("/register", authController.register);
 router.post("/login", authController.login);
 router.post("/update-password", authController.updatePassword);
+router.post("/hafalan", authController.hafalan);
 
 router.get("/profile", authenticate, authController.profile);
 router.get("/users", authController.getAllUsers); // 🔹 ini route baru
