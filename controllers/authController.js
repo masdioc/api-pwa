@@ -63,6 +63,7 @@ exports.getAllUsers = async (req, res) => {
 exports.profile = async (req, res) => {
   res.json({ message: "Data profil", user: req.user });
 };
+
 exports.hafalan = async (req, res) => {
   const { user_id, surah_nomor, surah_nama } = req.body;
   db.query(

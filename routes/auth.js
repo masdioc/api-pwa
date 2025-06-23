@@ -2,6 +2,13 @@
 
 // 📁 /routes/auth.js
 const express = require("express");
+const app = express();
+const cors = require("cors");
+// const apiRoutes = require("./routes/authRoutes"); // atau nama file route kamu
+
+app.use(cors());
+app.use(express.json()); // penting untuk parse JSON body
+
 const router = express.Router();
 const authController = require("../controllers/authController");
 const soalController = require("../controllers/soalController");
