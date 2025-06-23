@@ -1,0 +1,36 @@
+{
+  "nomor": "109",
+  "nama": "Al-Kafirun",
+  "ayat": [
+    {
+      "arabic": "قُلۡ يَـٰٓأَيُّهَا ٱلۡكَٰفِرُونَ",
+      "latin": "Qul ya ayyuha alkafiroona",
+      "translation": "Katakanlah (Muhammad), \"Wahai orang-orang kafir"
+    },
+    {
+      "arabic": "لَآ أَعۡبُدُ مَا تَعۡبُدُونَ",
+      "latin": "La aAAbudu ma taAAbudoona",
+      "translation": "aku tidak akan menyembah apa yang kamu sembah"
+    },
+    {
+      "arabic": "وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ",
+      "latin": "Wala antum AAabidoona ma aAAbudu",
+      "translation": "dan kamu bukan penyembah apa yang aku sembah"
+    },
+    {
+      "arabic": "وَلَآ أَنَا۠ عَابِدٞ مَّا عَبَدتُّمۡ",
+      "latin": "Wala ana AAabidun ma AAabadtum",
+      "translation": "dan aku tidak pernah menjadi penyembah apa yang kamu sembah"
+    },
+    {
+      "arabic": "وَلَآ أَنتُمۡ عَٰبِدُونَ مَآ أَعۡبُدُ",
+      "latin": "Wala antum AAabidoona ma aAAbudu",
+      "translation": "dan kamu tidak pernah (pula) menjadi penyembah apa yang aku sembah"
+    },
+    {
+      "arabic": "لَكُمۡ دِينُكُمۡ وَلِيَ دِينِ",
+      "latin": "Lakum deenukum waliya deeni",
+      "translation": "Untukmu agamamu, dan untukku agamaku"
+    }
+  ]
+}

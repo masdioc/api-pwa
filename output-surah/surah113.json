@@ -1,0 +1,31 @@
+{
+  "nomor": "113",
+  "nama": "Al-Falaq",
+  "ayat": [
+    {
+      "arabic": "قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ",
+      "latin": "Qul aAAoothu birabbi alfalaqi",
+      "translation": "Katakanlah, \"Aku berlindung kepada Tuhan yang menguasai subuh (fajar)"
+    },
+    {
+      "arabic": "مِن شَرِّ مَا خَلَقَ",
+      "latin": "Min sharri ma khalaqa",
+      "translation": "dari kejahatan (makhluk yang) Dia ciptakan"
+    },
+    {
+      "arabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "latin": "Wamin sharri ghasiqin itha waqaba",
+      "translation": "dan dari kejahatan malam apabila telah gelap gulita"
+    },
+    {
+      "arabic": "وَمِن شَرِّ ٱلنَّفَّـٰثَٰتِ فِي ٱلۡعُقَدِ",
+      "latin": "Wamin sharri alnnaffathati fee alAAuqadi",
+      "translation": "dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya)"
+    },
+    {
+      "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "latin": "Wamin sharri hasidin itha hasada",
+      "translation": "dan dari kejahatan orang yang dengki apabila dia dengki"
+    }
+  ]
+}
