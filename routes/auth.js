@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const upload = require("../middleware/uploadMiddleware");
 // const apiRoutes = require("./routes/authRoutes"); // atau nama file route kamu
 
 app.use(cors());
@@ -22,6 +23,12 @@ router.post("/last-read", surahController.saveLastRead);
 router.get("/last-read", surahController.getLastRead);
 router.get("/last-read/all", surahController.getAllLastRead);
 router.post("/last-read/update-status", surahController.updateLastReadStatus);
+
+router.post(
+  "/update-photo",
+  upload.single("photo"),
+  authController.updatePhoto
+);
 
 router.post("/add-observasi", observasiController.generateObservasi);
 router.post("/update-observasi", observasiController.updateObservasi);
