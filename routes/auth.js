@@ -26,7 +26,7 @@ router.post("/last-read/update-status", surahController.updateLastReadStatus);
 router.post("/add-observasi", observasiController.generateObservasi);
 router.post("/update-observasi", observasiController.generateObservasi);
 
-router.get("/get-observasi", observasiController.getAllLProgres);
+router.post("/get-observasi", observasiController.getAllLProgres);
 
 router.get("/profile", authenticate, authController.profile);
 router.get("/users", authController.getAllUsers); // 🔹 ini route baru

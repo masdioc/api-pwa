@@ -21,7 +21,7 @@ exports.create = async (req, res) => {
   }
 };
 exports.generateObservasi = async (req, res) => {
-  const userId = 3;
+  const { userId } = req.body;
   try {
     // Ambil semua observasi_id dari ref_observasi
     const [refObservasi] = await db.query("SELECT id FROM ref_observasi");
