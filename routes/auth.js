@@ -11,6 +11,7 @@ const router = express.Router();
 const authController = require("../controllers/authController");
 const soalController = require("../controllers/soalController");
 const surahController = require("../controllers/surahController");
+const observasiController = require("../controllers/observasiController");
 const authenticate = require("../middleware/authMiddleware");
 const { importQuestions } = require("../controllers/importController");
 router.post("/register", authController.register);
@@ -21,6 +22,11 @@ router.post("/last-read", surahController.saveLastRead);
 router.get("/last-read", surahController.getLastRead);
 router.get("/last-read/all", surahController.getAllLastRead);
 router.post("/last-read/update-status", surahController.updateLastReadStatus);
+
+router.post("/add-observasi", observasiController.generateObservasi);
+router.post("/update-observasi", observasiController.generateObservasi);
+
+router.get("/get-observasi", observasiController.getAllLProgres);
 
 router.get("/profile", authenticate, authController.profile);
 router.get("/users", authController.getAllUsers); // 🔹 ini route baru
