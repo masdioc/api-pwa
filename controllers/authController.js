@@ -59,6 +59,7 @@ exports.login = async (req, res) => {
         email: user.email,
         level: user.level,
         role: user.role,
+        photo: user.photo,
       },
     });
   } catch (err) {
@@ -69,7 +70,7 @@ exports.login = async (req, res) => {
 exports.getAllUsers = async (req, res) => {
   try {
     const [users] = await db.query(
-      "SELECT id, username, name, email, level FROM users ORDER BY id ASC"
+      "SELECT id, username, name, email, level,role,photo FROM users ORDER BY id ASC"
     );
     res.json({ users });
   } catch (err) {
