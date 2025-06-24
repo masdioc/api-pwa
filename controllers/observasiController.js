@@ -51,19 +51,79 @@ exports.generateObservasi = async (req, res) => {
     res.status(500).json("Terjadi kesalahan saat generate data.");
   }
 };
-exports.getAllLProgres = async (req, res) => {
-  try {
-    const [rows] = await db.query(`
-    SELECT ref_observasi.id,observasi,updated_at
-FROM progres_murid
-JOIN ref_observasi ON progres_murid.observasi_id = ref_observasi.id
-ORDER BY ref_observasi.id;
+exports.getObservasi = async (req, res) => {
+  const { userId } = req.body;
 
-    `);
+  // Validasi input
+  if (!userId) {
+    return res.status(400).json({ message: "userId wajib dikirim" });
+  }
+
+  try {
+    const [rows] = await db.query(
+      `
+      SELECT 
+        pm.user_id,
+        pm.observasi_id,
+        ro.observasi,
+        pm.status_praktek,
+        pm.status_teori,
+        pm.updated_at
+      FROM progres_murid pm
+      JOIN ref_observasi ro ON pm.observasi_id = ro.id
+      WHERE pm.user_id = ?
+      ORDER BY ro.id
+      `,
+      [userId]
+    );
 
     res.json({ data: rows });
   } catch (err) {
-    console.error("Gagal ambil data last_read:", err);
-    res.status(500).json({ message: "Gagal mengambil data" });
+    console.error("❌ Gagal ambil data observasi:", err);
+    res.status(500).json({ message: "Gagal mengambil data observasi" });
+  }
+};
+exports.updateObservasi = async (req, res) => {
+  const { user_id, observasi_id, status_praktek, status_teori } = req.body;
+
+  if (!user_id || !observasi_id) {
+    return res
+      .status(400)
+      .json({ message: "user_id dan observasi_id wajib dikirim" });
+  }
+
+  // Siapkan bagian SET query sesuai input yang dikirim
+  const updates = [];
+  const values = [];
+
+  if (status_praktek !== undefined) {
+    updates.push("status_praktek = ?");
+    values.push(status_praktek);
+  }
+
+  if (status_teori !== undefined) {
+    updates.push("status_teori = ?");
+    values.push(status_teori);
+  }
+
+  if (updates.length === 0) {
+    return res.status(400).json({ message: "Tidak ada data yang diperbarui" });
+  }
+
+  // Tambahkan kondisi WHERE
+  values.push(user_id, observasi_id);
+
+  try {
+    await db.query(
+      `UPDATE progres_murid SET ${updates.join(
+        ", "
+      )} WHERE user_id = ? AND observasi_id = ?`,
+      values
+    );
+
+    res.json({ message: "✅ Status observasi berhasil diperbarui" });
+  } catch (err) {
+    console.error("❌ Gagal update validasi:", err);
+    res.status(500).json({ message: "❌ Gagal update status observasi" });
   }
 };
