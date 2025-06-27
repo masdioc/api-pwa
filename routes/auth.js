@@ -36,7 +36,8 @@ router.post("/update-observasi", observasiController.updateObservasi);
 router.post("/get-observasi", observasiController.getObservasi);
 
 router.get("/profile", authenticate, authController.profile);
-router.get("/users", authController.getAllUsers); // 🔹 ini route baru
+// router.get("/users", authController.getAllUsers); // 🔹 ini route baru
+
 router.get("/soals", soalController.getAllSoals); // 🔹 ini route baru
 
 router.post("/import", importQuestions);

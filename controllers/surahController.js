@@ -48,7 +48,7 @@ exports.getAllLastRead = async (req, res) => {
     SELECT user_id, name, username, surah_nomor, surah_nama, ayat_nomor, updated_at, status_validasi
 FROM last_read
 JOIN users ON last_read.user_id = users.id
-ORDER BY updated_at DESC;
+ORDER BY last_read.updated_at DESC;
 
     `);
 
