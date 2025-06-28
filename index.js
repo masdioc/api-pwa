@@ -18,6 +18,12 @@ app.use("/api", authRoutes);
 
 const PORT = process.env.PORT || 3000;
 
+const courselogRoutes = require("./routes/courselog");
+app.use("/api/courselog", courselogRoutes);
+
+const faqRoutes = require("./routes/faq");
+app.use("/api/faq", faqRoutes);
+
 const wilayahsRoutes = require("./routes/wilayahs");
 app.use("/api/wilayahs", wilayahsRoutes);
 
