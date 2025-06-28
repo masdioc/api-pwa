@@ -6,7 +6,18 @@ const db = require("../config/db");
 const SECRET_KEY = process.env.JWT_SECRET || "rahasia_super_aman";
 
 exports.register = async (req, res) => {
-  const { username, password, name, email, level, role } = req.body;
+  const {
+    username,
+    password,
+    name,
+    email,
+    level,
+    role,
+    province_id,
+    regence_id,
+    district_id,
+    village_id,
+  } = req.body;
 
   try {
     const [existing] = await db.query(
@@ -19,8 +30,19 @@ exports.register = async (req, res) => {
     const hashed = await bcrypt.hash(password, 10);
 
     await db.query(
-      "INSERT INTO users (username, password, name, email, level,role) VALUES (?, ?, ?, ?, ?, ?)",
-      [username, hashed, name, email, level, role]
+      "INSERT INTO users (username, password, name, email, level,role,province_id,regence_id,district_id,village_id) VALUES (?, ?, ?, ?, ?, ?,?,?,?,?)",
+      [
+        username,
+        hashed,
+        name,
+        email,
+        level,
+        role,
+        province_id,
+        regence_id,
+        district_id,
+        village_id,
+      ]
     );
 
     res.status(201).json({ message: "Registrasi berhasil" });

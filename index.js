@@ -17,9 +17,10 @@ app.use(bodyParser.json());
 app.use("/api", authRoutes);
 
 const PORT = process.env.PORT || 3000;
-// const moduleRoutes = require("./routes/modules");
-// const moduleRoutes = require("./routes/module");
-// app.use("/api/module", moduleRoutes);
+
+const wilayahsRoutes = require("./routes/wilayahs");
+app.use("/api/wilayahs", wilayahsRoutes);
+
 const materialRoutes = require("./routes/materials");
 app.use("/api/materials", materialRoutes);
 

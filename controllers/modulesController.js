@@ -18,6 +18,32 @@ exports.getModules = async (req, res) => {
 };
 
 // CREATE module
+
+exports.getModuleMaterials = async (req, res) => {
+  const moduleId = parseInt(req.params.id, 10);
+
+  if (isNaN(moduleId)) {
+    return res.status(400).json({ message: "Invalid module ID" });
+  }
+
+  try {
+    const [rows] = await db.query(
+      "SELECT * FROM materials WHERE module_id = ?",
+      [moduleId]
+    );
+
+    if (rows.length === 0) {
+      return res.status(404).json({ message: "No materials found." });
+    }
+
+    res.status(200).json(rows);
+  } catch (err) {
+    console.error("Database error:", err);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
+// CREATE module
 exports.createModule = async (req, res) => {
   try {
     const { title, order_index, course_id } = req.body;

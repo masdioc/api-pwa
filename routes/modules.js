@@ -14,4 +14,5 @@ router.put("/:id", modulesController.updateModule);
 // DELETE /api/modules/:id
 router.delete("/:id", modulesController.deleteModule);
 
+router.get("/:id/materials", modulesController.getModuleMaterials);
 module.exports = router;
