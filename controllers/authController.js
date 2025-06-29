@@ -56,9 +56,22 @@ exports.login = async (req, res) => {
   const { username, password } = req.body;
 
   try {
-    const [rows] = await db.query("SELECT * FROM users WHERE username = ?", [
-      username,
-    ]);
+    const [rows] = await db.query(
+      `SELECT 
+        u.*,
+        p.name AS provinsi_nama,
+        r.name AS kabupaten_nama,
+        d.name AS kecamatan_nama,
+        v.name AS desa_nama
+      FROM users u
+      LEFT JOIN provinces p ON u.province_id = p.code
+      LEFT JOIN regencies r ON u.regence_id = r.code
+      LEFT JOIN subdistricts d ON u.district_id = d.code
+      LEFT JOIN villages v ON u.village_id = v.code
+      WHERE u.username = ?`,
+      [username]
+    );
+
     const user = rows[0];
     if (!user) return res.status(401).json({ message: "User tidak ditemukan" });
 
@@ -82,6 +95,14 @@ exports.login = async (req, res) => {
         level: user.level,
         role: user.role,
         photo: user.photo,
+        provinsi_id: user.provinsi_id,
+        kabupaten_id: user.kabupaten_id,
+        kecamatan_id: user.kecamatan_id,
+        desa_id: user.desa_id,
+        provinsi_nama: user.provinsi_nama,
+        kabupaten_nama: user.kabupaten_nama,
+        kecamatan_nama: user.kecamatan_nama,
+        desa_nama: user.desa_nama,
       },
     });
   } catch (err) {
