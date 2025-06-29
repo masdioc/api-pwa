@@ -28,19 +28,46 @@ exports.getUserById = async (req, res) => {
   res.json(result[0]);
 };
 
-exports.getUsersByRole = async (req, res) => {
-  const role = req.query.role;
+exports.getUserByRole = async (req, res) => {
+  const role = req.params.role;
+
+  // console.log(role);
+
   try {
-    const [rows] = await db.query(
-      "SELECT id, username, name, email, level,role,photo FROM users WHERE role = ?",
+    const [users] = await db.query(
+      `SELECT u.id,u.username,u.name,u.email,u.level,u.role,u.photo, 
+   p.code AS provinsi_id,    
+   p.name AS provinsi_nama, 
+   r.code AS kabupaten_id,    
+      r.name AS kabupaten_nama, 
+      d.code AS kecamatan_id,
+      d.name AS kecamatan_nama, 
+      v.code AS desa_id,
+      v.name AS desa_nama 
+    FROM users u
+    LEFT JOIN provinces p ON u.province_id = p.code
+    LEFT JOIN regencies r ON u.regence_id = r.code
+    LEFT JOIN subdistricts d ON u.district_id = d.code
+    LEFT JOIN villages v ON u.village_id = v.code
+     WHERE u.role = ?`,
       [role]
     );
-    res.json(rows);
+    res.json({ users });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 };
-
+exports.getAllUsers = async (req, res) => {
+  try {
+    const [users] = await db.query(
+      "SELECT id, username, name, email, level,role,photo FROM users ORDER BY id ASC"
+    );
+    res.json({ users });
+  } catch (err) {
+    console.error("Gagal mengambil data user:", err);
+    res.status(500).json({ message: "Gagal mengambil data user" });
+  }
+};
 exports.updateProfile = async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty())

@@ -110,17 +110,7 @@ exports.login = async (req, res) => {
     res.status(500).json({ message: "Gagal login" });
   }
 };
-exports.getAllUsers = async (req, res) => {
-  try {
-    const [users] = await db.query(
-      "SELECT id, username, name, email, level,role,photo FROM users ORDER BY id ASC"
-    );
-    res.json({ users });
-  } catch (err) {
-    console.error("Gagal mengambil data user:", err);
-    res.status(500).json({ message: "Gagal mengambil data user" });
-  }
-};
+
 exports.profile = async (req, res) => {
   res.json({ message: "Data profil", user: req.user });
 };
