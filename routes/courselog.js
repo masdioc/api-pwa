@@ -11,5 +11,6 @@ router.put("/:id", courselogController.updateCourseLog);
 router.delete("/:id", courselogController.deleteCourseLog);
 
 router.get("/:id/recap", courselogController.recapCourseLog);
+router.get("/:id/recaptable", courselogController.recaptableCourseLog);
 
 module.exports = router;

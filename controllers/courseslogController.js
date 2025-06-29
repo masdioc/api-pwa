@@ -94,7 +94,32 @@ exports.recapCourseLog = async (req, res) => {
     res.status(500).json({ error: "Gagal mengambil data log belajar" });
   }
 };
+exports.recaptableCourseLog = async (req, res) => {
+  const { guru_id } = req.query;
 
+  // if (!guru_id) {
+  //   return res.status(400).json({ error: "Parameter guru_id wajib diisi" });
+  // }
+
+  try {
+    const [rows] = await db.query(
+      `SELECT 
+         l.tanggal, 
+         u.name AS nama_siswa, 
+         m.title, 
+         l.durasi 
+       FROM course_logs l
+        JOIN users u ON l.user_id = u.id      
+		  JOIN materials m ON l.material_id = m.id
+       ORDER BY l.tanggal DESC, u.name ASC`
+    );
+
+    res.json(rows);
+  } catch (error) {
+    console.error("Gagal ambil log belajar:", error);
+    res.status(500).json({ error: "Gagal mengambil data log belajar" });
+  }
+};
 // exports.createCourseLog = async (req, res) => {
 //   const errors = validationResult(req);
 //   if (!errors.isEmpty())
