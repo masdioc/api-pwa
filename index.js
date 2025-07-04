@@ -45,13 +45,13 @@ app.use("/api/courses", courseRoutes);
 const usersRoutes = require("./routes/users");
 app.use("/api/users", usersRoutes);
 
-// app.listen(PORT, "0.0.0.0", () =>
-//   console.log(`Server running on port ${PORT}`)
-// );
-
-app.listen(PORT, "192.168.0.108", () =>
+app.listen(PORT, "0.0.0.0", () =>
   console.log(`Server running on port ${PORT}`)
 );
+
+// app.listen(PORT, "192.168.0.108", () =>
+//   console.log(`Server running on port ${PORT}`)
+// );
 
 // app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 

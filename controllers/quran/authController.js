@@ -3,10 +3,15 @@ const axios = require("axios");
 const qs = require("qs");
 
 exports.getAccessToken = async (req, res) => {
+  const { clientId, clientSecret } = req.body;
+
   const data = qs.stringify({
     grant_type: "client_credentials",
     scope: "content",
   });
+  const credentials = Buffer.from(`${clientId}:${clientSecret}`).toString(
+    "base64"
+  );
 
   const config = {
     method: "post",
@@ -14,8 +19,7 @@ exports.getAccessToken = async (req, res) => {
     url: "https://oauth2.quran.foundation/oauth2/token",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
-      Authorization:
-        "Basic N2U5NzA1ZTUtZmMwNS00NzI5LTg2Y2UtMzEyZDRiMWFjYzg0OnpMbDB1fllieTc0ZjFPR3hiODdRVGh0X2tL",
+      Authorization: `Basic ${credentials}`,
     },
     data: data,
   };
@@ -23,9 +27,11 @@ exports.getAccessToken = async (req, res) => {
   try {
     const response = await axios.request(config);
     res.json(response.data);
-    // return response.data; // return access_token & metadata
   } catch (error) {
     console.error("Gagal ambil token:", error.response?.data || error.message);
-    throw error;
+    res.status(500).json({
+      error: "Gagal mendapatkan access token",
+      detail: error.response?.data || error.message,
+    });
   }
 };
